@@ -109,7 +109,7 @@ vendor.camera.aux.packagelist=android,com.oneplus.camera,com.oppo.camera,com.opp
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM8350
+ro.soc.model=SM8450
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
@@ -144,8 +144,8 @@ debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=0
-ro.gfx.driver.0=com.oplus.gpudrivers.sm8350.api30
-ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.lahaina.api30
+ro.gfx.driver.0=com.oplus.gpudrivers.sm8450.api31
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api31
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610

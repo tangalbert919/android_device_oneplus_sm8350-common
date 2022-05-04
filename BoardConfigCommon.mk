@@ -17,7 +17,7 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-COMMON_PATH := device/oneplus/sm8350-common
+COMMON_PATH := device/oneplus/sm8450-common
 
 # A/B
 AB_OTA_UPDATER := true
@@ -67,7 +67,7 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lahaina
+TARGET_BOOTLOADER_BOARD_NAME := taro
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
@@ -119,8 +119,8 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     BRAND_SHOW_FLAG=oneplus \
     DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
     LLVM=1
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
-TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
+TARGET_KERNEL_SOURCE := kernel/oneplus/sm8450
+TARGET_KERNEL_CONFIG := gki_defconfig waipio_GKI.config
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
@@ -131,7 +131,7 @@ TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := lahaina
+TARGET_BOARD_PLATFORM := taro
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
